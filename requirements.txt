@@ -1,0 +1,6 @@
+# requirements without versions
+shiny
+shinythemes
+lubridate
+googleVis
+tidyverse
