@@ -1,0 +1,14 @@
+name: shiny-covid-poland
+title: shiny-covid-poland
+username:
+account: maciej-pyra
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6242629
+bundleId: 5874457
+url: https://maciej-pyra.shinyapps.io/shiny-covid-poland/
+when: 1651775949.75354
+lastSyncTime: 1651775949.75354
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md|requirements.txt
