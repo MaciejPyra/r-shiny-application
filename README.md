@@ -1,5 +1,4 @@
-# R Shiny Web Application 
-## -> To visit app, click https://maciej-pyra.shinyapps.io/shiny-covid-poland/
+# R Shiny Web Application -> To visit app, click [application link](https://maciej-pyra.shinyapps.io/shiny-covid-poland/).
 
 The aim of the project was to develop interactive web app in R programmic language using Shiny package. I prepared an application presenting the number of people infected with the Covid-19 virus in Poland during the first wave in 2020 (March - June). It is possible to analyze infections both nationwide and in relation to all 16 voivodships (provinces) in the country.
 
