@@ -55,39 +55,40 @@ In turn, server defines individual relations between the input elements (i.e. el
 <a name="desc2"></a>
 ### Application architecture
 The application has been divided into five different tabs (navbarPage instruction in the application UI). In each of the tabs there are appropriate input functions that allow the user to manually select respective parameter values. Additionally, there are output functions that represent the elements previously generated on the application server side.
-
+</br>
 
 <p align="center">
   <img src="https://github.com/MaciejPyra/r-shiny-application/blob/main/Application/Bookmarks.JPG" />
 </p>
 
+
 Construction of the application:
-- "Infections in Poland in total" -> three input functions: selectInput to select a specific date, sliderInput to select the number of infections and chekboxInput to define whether to show the data source. On the output element side there is an infection table presented by tableOutput and a link to the data source presented by verbatimTextOutput;
+- "Infections in Poland in total" -> three input functions: selectInput to select a specific date, sliderInput to select the number of infections and chekboxInput to define whether to show the data source. On the output element side there is an infection table presented by tableOutput and a link to the data source presented by verbatimTextOutput. Table has two columns: name of voivodship and the number of new Covid-19 cases in this province in a defined day.
 
 <p align="center">
   <img src="https://github.com/MaciejPyra/r-shiny-application/blob/main/Application/Tab1.JPG" />
 </p>
 
-- "Daily increase in infections" -> two selectInput input functions allowing to select a given province from the drop-down list and two graphs (one created in the ggplot2 package, the other in base R) presented by plotOutput;
+- "Daily increase in infections" -> two selectInput input functions allowing to select a given province from the drop-down list and two graphs (one created in the ggplot2 package, the other in base R) presented by plotOutput. Both graphs show daily increase in infections in defined voivodships, the first one is a line plot, the other a bar plot.
 
 <p align="center">
   <img src="https://github.com/MaciejPyra/r-shiny-application/blob/main/Application/Tab2.JPG" />
 </p>
 
-- "Cumulative number of infections" -> two selectInput input functions allowing to select a given province from the drop-down list and two graphs (one created in the ggplot2 package, the other in base R) presented by plotOutput;
+- "Cumulative number of infections" -> two selectInput input functions allowing to select a given province from the drop-down list and two graphs (one created in the ggplot2 package, the other in base R) presented by plotOutput. Both graphs show cumulative number of infections in defined voivodships, the first one is a line plot, the other a bar plot.
 
 <p align="center">
   <img src="https://github.com/MaciejPyra/r-shiny-application/blob/main/Application/Tab3.JPG" />
 </p>
 
-- "Infections by individual voivodships - day" -> two input functions - one selectInput for selecting a specific date from the drop-down list and actionButton for initiating a specific action, in this case generating a new interactive map of infections. On the output function side there is htmlOutput which represents an element from the googleVis package (interactive map);
+- "Infections by individual voivodships - day" -> two input functions - one selectInput for selecting a specific date from the drop-down list and actionButton for initiating a specific action, in this case generating a new interactive map of infections. On the output function side there is htmlOutput which represents an element from the googleVis package (interactive map). Map, depending on the color saturation, shows the number of daily infections in individual regions. It enables straightforward comparisons between 16 provinces in Poland. 
 
 
 <p align="center">
   <img src="https://github.com/MaciejPyra/r-shiny-application/blob/main/Application/Tab4.JPG" />
 </p>
 
-- "Infections by individual voivodships - range" -> two input functions - one dataRangeInput for selecting a specific time interval from the calendar and actionButton for initiating a specific action, in this case generating a new interactive map. On the output function side there is htmlOutput which represents an element from the googleVis package (interactive map);
+- "Infections by individual voivodships - range" -> two input functions - one dataRangeInput for selecting a specific time interval from the calendar and actionButton for initiating a specific action, in this case generating a new interactive map. On the output function side there is htmlOutput which represents an element from the googleVis package (interactive map). Map, depending on the color saturation, shows the number of new infections in individual regions in the chosen time interval. It enables straightforward comparisons between 16 provinces in Poland. 
 
 
 <p align="center">
