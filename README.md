@@ -58,6 +58,11 @@ The application has been divided into five different tabs (navbarPage () instruc
 
 Construction of the application:
 - tab 1 - three input functions: selectInput () to select a specific date, sliderInput () to select the number of infections and chekboxInput () to define whether to show the data source. On the output element side there is an infection table presented by tableOutput () and a link to the data source presented by verbatimTextOutput ();
+
+<p align="center">
+  <img src="https://github.com/MaciejPyra/r-shiny-application/blob/main/Application/Tab1.jpg" />
+</p>
+
 - tab 2 - two selectInput () input functions allowing to select a given province from the drop-down list and two graphs (one created in the ggplot2 package, the other in base R) presented by plotOutput ();
 - tab 3 - two selectInput () input functions allowing to select a given province from the drop-down list and two graphs (one created in the ggplot2 package, the other in base R) presented by plotOutput ();
 - tab 4 - two input functions - one selectInput () for selecting a specific date from the drop-down list and actionButton () for initiating a specific action, in this case generating a new interactive map of infections. On the output function side there is htmlOutput () which represents an element from the googleVis package (interactive map);
