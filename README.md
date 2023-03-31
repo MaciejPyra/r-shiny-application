@@ -38,7 +38,7 @@ Source data for infections analysis stems from https://en.wikipedia.org/wiki/COV
 * R programmic language,
 * R Shiny -> combines the computational power of R with the interactivity of the modern web app,
 * tidyverse -> collection of R packages designed for data science, like ggplot2 for creating graphics,
-* other popular R libraries, like lubridate -> to perform specific subtaks, for example to handle date-times in an easier way; 
+* other popular R libraries, like lubridate -> to perform specific subtasks, for example to handle date-times in an easier way; 
 
 
 <a name="desc"></a>
